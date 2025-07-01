@@ -1,0 +1,10 @@
+MIDlet-1: ProyFinal, ProyFinal.png, Proyecto.Proyecto
+MIDlet-2: Presentacion,,Proyecto.Presentacion
+MIDlet-3: MenuSyst,,Proyecto.MenuSyst
+MIDlet-Jar-Size: 171685
+MIDlet-Jar-URL: ProyFinal.jar
+MIDlet-Name: ProyFinal
+MIDlet-Vendor: Unknown
+MIDlet-Version: 1.0
+MicroEdition-Configuration: CLDC-1.0
+MicroEdition-Profile: MIDP-1.0
