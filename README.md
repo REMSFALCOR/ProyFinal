@@ -4,8 +4,8 @@
 ### [Java](http://www.eclipse.org/platform) , ya no exite la pagina.
 ### [J2ME Wireless Toolkit](https://jcp.org/en/jsr/summary?id=j2me)
 ##
-## Pequña explicacion de la aplicación
-### [Clase Proyecto](https://github.com/REMSFALCOR/ProyFinal/blob/main/src/Proyecto/Proyecto.java)  
+### Pequña explicacion de la aplicación
+## [Clase Proyecto](https://github.com/REMSFALCOR/ProyFinal/blob/main/src/Proyecto/Proyecto.java)  
 ## Librerias Usadas y clases que implementamosen el Proyecto
 ``` java
 import java.lang.Thread; 
@@ -17,7 +17,7 @@ public class Proyecto extends MIDlet implements CommandListener,Runnable {
 //***
 }
 ```
-## Sincronizado de imagenes y maneras
+### Sincronizado de imagenes y maneras
 ``` java
 public synchronized void nullPlayer() {	
 		TextNomb.setString("");
@@ -40,7 +40,7 @@ static public Form getConsulta() {
 	return Consulta;
    }
 ```
-## Sincronizado de imagenes del menu
+### Sincronizado de imagenes del menu
 ``` java
 static public  synchronized String SacarMenu(int cual) {		
 		return MENU[cual];
