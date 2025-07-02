@@ -6,7 +6,7 @@
 ##
 ### Pequña explicacion de la aplicación
 ## [Clase Proyecto](https://github.com/REMSFALCOR/ProyFinal/blob/main/src/Proyecto/Proyecto.java)  
-## Librerias Usadas y clases que implementamosen el Proyecto
+### Librerias Usadas y clases que implementamosen el Proyecto
 ``` java
 import java.lang.Thread; 
 import javax.microedition.midlet.*;
