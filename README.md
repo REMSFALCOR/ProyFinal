@@ -5,9 +5,33 @@
 ### [J2ME Wireless Toolkit](https://jcp.org/en/jsr/summary?id=j2me)
 ##
 ## Pequña explicacion de la aplicación
-### [Clase Proyecto](Proyecto.java)  
-## 
-
+### [Clase Proyecto](https://github.com/REMSFALCOR/ProyFinal/blob/main/src/Proyecto/Proyecto.java)  
+``` java
+@Service
+@RequiredArgsConstructor  //crea un constructor para que la variable se inicialice con ese dato la proxima vez
+public class UsuariosService {	
+	private final UsuariosRepository usuariosRepository;	
+    @Autowired
+    public UsuariosService(UsuariosRepository usuariosRepository) {
+        this.usuariosRepository = usuariosRepository;
+    }	
+	public void save(Usuarios usuario) {
+		usuariosRepository.save(usuario);
+	}	
+	public List<Usuarios> findAll(){
+		return usuariosRepository.findAll();
+	}
+	public Optional<Usuarios> findById(String id){
+		return usuariosRepository.findById(id);	
+	}	
+	public Usuarios getUsuarioById(String id) 
+	{ return usuariosRepository.findById(id).orElse(null); }				
+	// eliminar una dato por el id
+	public void deleteById(String id){
+		usuariosRepository.deleteById(id); 		
+	}
+}
+```
 
 
 
