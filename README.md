@@ -6,5 +6,7 @@
 
 ## Ver desde Githup 
 
-https://github.com/user-attachments/assets/eb68d171-6b1a-4583-ab95-2zbb9dcdf4f14
+https://github.com/user-attachments/assets/fbcda9a6-1392-485d-b173-1eace450aff9
+
+
 
