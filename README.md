@@ -4,7 +4,7 @@
 ### [Java](http://www.eclipse.org/platform) , ya no exite la pagina.
 ### [J2ME Wireless Toolkit](https://jcp.org/en/jsr/summary?id=j2me)
 ##
-### Pequña explicacion de la aplicación
+## Pequña explicacion de la aplicación
 ## [Clase Proyecto](https://github.com/REMSFALCOR/ProyFinal/blob/main/src/Proyecto/Proyecto.java)  
 ### Librerias Usadas y clases que implementamosen el Proyecto
 ``` java
@@ -61,6 +61,45 @@ static public  synchronized Image SetServ(int cual) {
 		return FotoServ[cual];
     } 
 ```
+### Creación de los componetes del proyecto
+``` java
+
+  public Proyecto() { 
+    	instance = this; 
+    	LLenado();			
+		//create an implicit list
+		GardaLug= new List(MENU[0],List.IMPLICIT,options, FotoServ);		
+		GardaLug.addCommand(backCommand);
+		GardaLug.setCommandListener(this);
+		
+		//create an exclusive list
+		List_camino= new List(MENU[1],List.IMPLICIT,NombCalle,null);//FotoServ		
+		List_camino.addCommand(backCommand);
+	-	List_camino.setCommandListener(this);
+//***
+//***
+}
+```
+### Sincronizado del evento qiue se esta realizando
+``` java
+    public synchronized void destroyApp(boolean unconditional) {     
+	GardaLug=null;
+	List_camino=null;
+	MirarServ=null;
+	plano=null;
+	okCommand = null;
+	backCommand = null;
+	display=null;	
+    }
+```
+
+## [Clase MenuSyst](https://github.com/REMSFALCOR/ProyFinal/blob/main/src/Proyecto/MenuSyst.java)  
+### ----
+## [Clase DataBase](https://github.com/REMSFALCOR/ProyFinal/blob/main/src/Proyecto/DataBase.java)  
+### ----
+## [Clase MirarFoto](https://github.com/REMSFALCOR/ProyFinal/blob/main/src/Proyecto/MirarFoto.java)  
+### ----
+
 
 ## Ver en YouTube
  [![Alt text](https://img.youtube.com/vi/nVrzoEYSTFA/0.jpg)](https://www.youtube.com/watch?v=nVrzoEYSTFA)
